@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> Curso JAVA SCRIPT STARTER </title>
+        <meta charset="UTF-8">    
+    </head>
+
+    <body>
+
+
+
+
+
+        <script>
+
+
+            /*
+
+            // Com If e else
+            
+         function retornaSexo(sexo){
+            // M, F
+            // Masculino, Feminino 
+
+            if (sexo === 'M'){ // "=" receber valor dentro da variavel / "==" comparação entre valores / "===" Comparação entre valores e tipo (string com inteiro da falso)
+                return 'Masculino';
+            } else if (sexo ==='F'){
+                return 'Feminino';
+            } else{
+                return 'Outro';
+            }
+             
+         }
+
+         var resultado = retornaSexo('F');
+         console.log(resultado);   
+         */
+
+         // COM SWITCH:
+
+         function retornaSexo(sexo){
+             switch(sexo){
+              case 'M':
+                  return 'Masculino';
+               case 'F':
+                    return 'Feminino';  
+                default:
+                    return 'Outro'; 
+             }
+         }
+
+         var resultado = retornaSexo('F');
+         console.log(resultado);   
+        </script>
+
+    </body>
+</html>
