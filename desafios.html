@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title> Curso JAVA SCRIPT STARTER </title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        //SHIFT ALT F PARA IDENTAR
+
+        //EXERCICIO 1
+
+        /*
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+
+            console.log('O usuário mora em', endereco.cidade, '/', endereco.uf, ', no bairro', endereco.bairro, ', na rua', '"', endereco.rua,'"','com nº', endereco.numero);
+                */
+
+        //EXERCICIO 2
+        /*
+        function pares(x,y){
+            var num = x;
+
+            while (x <= y){
+               
+                if (x%2 == 0){
+                    console.log(x);
+                                  }
+                x++;
+            } 
+
+        }
+
+        var teste = pares(200,1500);
+        console.log(teste)
+        */
+
+        //EXERCICIO 3
+
+        /*
+        function temHabilidade(skills) {
+
+            var habilidade = "Javascript";
+          
+            if (skills.indexOf(habilidade) === 0){
+               var skills = true;
+                
+
+            } else{
+                skills = false;
+            }
+            return skills;
+
+            
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        var teste = temHabilidade(skills); // true ou false
+        console.log(teste);
+        */
+
+        //EXERCICIO 4
+        /*
+        function experiencia(anos){
+            if (anos < 1){
+                console.log('Iniciante')
+
+            } else if (anos > 1 && anos <= 3){
+                console.log('Intermediario')
+            }else if (anos > 3 && anos <= 6 ){
+                console.log('Avançado')
+            }else{
+                console.log('Jedi Master')
+            }
+        }
+        var expanos = experiencia(3);
+        console.log(expanos);
+        */
+
+        //EXERCICIO 5
+       
+
+        function testeCinco(vetor){
+
+           
+
+            for (var habilidades of vetor) {
+            console.log('O ' + habilidades.nome + ' Possui as seguintes habilidades:' + habilidades.habilidades.join());
+            }
+
+
+        }
+
+        var usuarios = [{
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        var desafio = testeCinco(usuarios);
+        console.log(desafio);
+
+    </script>
+
+</body>
+
+</html>
