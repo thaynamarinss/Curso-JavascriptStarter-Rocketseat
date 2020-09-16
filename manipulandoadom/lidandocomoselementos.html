@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title> Curso JAVA SCRIPT STARTER </title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <!-- SHIFT ALT F PARA IDENTAR -->
+
+    <div id="app">
+        <input id="nome" />
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://rocketseat.com.br/');
+
+        var textoElement = document.createTextNode('Acessar site da Rocketseat');
+        linkElement.appendChild(
+        textoElement); //APPEDNSCHILD > ADICIONAR O TEXTO ELEMENT COMO UM FILHO PARA O LINKELEMENT
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+    </script>
+
+</body>
+
+</html>
