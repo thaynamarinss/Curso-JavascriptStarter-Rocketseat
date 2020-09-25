@@ -44,6 +44,7 @@ minhaPromise()
 */
 
 //Utilizando Axios
+/*
 axios.get('https://api.github.com/users/diego3g')
     .then(function(responde){
         console.log(response);
@@ -51,3 +52,5 @@ axios.get('https://api.github.com/users/diego3g')
     .catch(function(error){
         console.warn(error);
     });
+
+    */
