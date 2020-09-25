@@ -20,10 +20,7 @@
     <ul id='lista'></ul>
 
     <script>
-
-         
-
-
+        
         //Desafio 1
         /*
         var botaoElement = document.querySelector('#btnCriar');
@@ -81,7 +78,7 @@
         */
 
         //Desafio 3
-        
+        /*
         var nomes = ["Diego", "Gabriel", "Lucas"];
         var listaElement = document.querySelector('#lista');
         var inputElement = document.querySelector('input');
@@ -97,12 +94,32 @@
              adicionaItem(nome);
 
         }
+        */
+        //Desafio 4
+        /*
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var listaElement = document.querySelector('#lista');
+        var inputElement = document.querySelector('input');
+
+        function adicionaItem(texto){
+            var linhaElement = document.createElement('li');
+            var nomeElement = document.createTextNode(texto);
+            linhaElement.appendChild(nomeElement);
+            listaElement.appendChild(linhaElement);
+        }
+
+        function adicionar() {
+            adicionaItem(inputElement.value);
+            inputElement.value = "" ;           
+        }
+
+
+
+        for (nome of nomes) {
+            adicionaItem(nome);
+        }
         
-
-        
-
-       
-
+        */
     </script>
 
 </body>
