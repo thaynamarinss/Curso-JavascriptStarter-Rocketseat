@@ -15,10 +15,15 @@
         <div class="box"> </div>
     </div>
 --->
-
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
     <ul id='lista'></ul>
 
     <script>
+
+         
+
+
         //Desafio 1
         /*
         var botaoElement = document.querySelector('#btnCriar');
@@ -76,18 +81,28 @@
         */
 
         //Desafio 3
-        /*
+        
         var nomes = ["Diego", "Gabriel", "Lucas"];
-        var listaElement = document.querySelector('#lista');    
+        var listaElement = document.querySelector('#lista');
+        var inputElement = document.querySelector('input');
 
-        for (nome of nomes){
+        function adicionaItem(texto){
             var linhaElement = document.createElement('li');
-            var nomeElement = document.createTextNode(nome);
+            var nomeElement = document.createTextNode(texto);
             linhaElement.appendChild(nomeElement);
             listaElement.appendChild(linhaElement);
+        }    
+
+        for (nome of nomes){
+             adicionaItem(nome);
 
         }
-        */
+        
+
+        
+
+       
+
     </script>
 
 </body>
