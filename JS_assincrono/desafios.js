@@ -50,6 +50,7 @@ function listRepositories(){
 */
 //Desafio 3 
 
+/*
 var listElement = document.querySelector('ul');
 var inputElement = document.querySelector('input');
 
@@ -92,3 +93,4 @@ function renderLoading(loading) {
         renderError();
       });
   }
+  */
